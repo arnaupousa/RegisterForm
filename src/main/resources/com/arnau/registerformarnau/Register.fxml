@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arnau.registerformarnau.controller.RegisterController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <StackPane prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <MediaView fitHeight="200.0" fitWidth="200.0" />
+                  <ImageView fitHeight="271.0" fitWidth="194.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../../../../Downloads/unnamed.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <VBox prefHeight="391.0" prefWidth="404.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="TOP" prefHeight="53.0" prefWidth="404.0" text="Formulario de registro">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <GridPane prefHeight="238.0" prefWidth="149.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Nombre y Apellidos:" />
+                        <Label fx:id="lblDNI" onDragDetected="#s" text="NIE/NIF:" GridPane.rowIndex="1" />
+                        <Label fx:id="lblCP" text="Código Postal:" GridPane.rowIndex="2" />
+                        <Label fx:id="lblBirth" text="Fecha de Nacimiento:" GridPane.rowIndex="3" />
+                        <Label fx:id="lblMail" text="Correo Electrónico:" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtName" prefHeight="25.0" prefWidth="121.0" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="txtDNI" prefHeight="25.0" prefWidth="105.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="txtCP" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="txtBirth" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="txtMail" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <VBox fx:id="lblName" prefHeight="0.0" prefWidth="77.0">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+                  <VBox prefHeight="200.0" prefWidth="400.0">
+                     <children>
+                        <Label fx:id="txtInfo" alignment="CENTER" prefHeight="26.0" prefWidth="400.0" textAlignment="CENTER" />
+                        <GridPane alignment="CENTER" prefHeight="45.0" prefWidth="352.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="213.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="313.0" minWidth="10.0" prefWidth="187.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="btnReg" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Registrarse" />
+                              <Button fx:id="btnLimpiar" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Limpiar" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                        <Hyperlink alignment="CENTER" prefHeight="78.0" prefWidth="400.0" text="Iniciar sesión" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</StackPane>
