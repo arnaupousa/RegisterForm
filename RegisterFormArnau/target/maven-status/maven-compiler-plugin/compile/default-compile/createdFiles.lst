@@ -1,0 +1,9 @@
+com\arnau\registerformarnau\RegisteredUsersManagement.class
+module-info.class
+com\arnau\registerformarnau\controller\RegisterController.class
+com\arnau\registerformarnau\Launcher.class
+com\arnau\registerformarnau\controller\LoginController.class
+com\arnau\registerformarnau\model\UserDataValidations.class
+ficheros\ClassFichero.class
+com\arnau\registerformarnau\App.class
+com\arnau\registerformarnau\Main.class
